@@ -36,8 +36,8 @@ export default function Page() {
         fondo = fondos[2];
     }
     const page_container = {
-            width: '320px',
-            height: '100%',
+            width: '100%',
+            maxWidth: '400px',
             // backgroundImage: `url(${fondo})`,
             backgroundSize: 'cover', 
             overflow: 'hidden',
@@ -194,14 +194,13 @@ useEffect (()=>{
     return(
         <div style={page_container}>
             <ImagenFondo datos={fondo}></ImagenFondo>
-            <div className='relative'>
+            {/* <div className='relative'> */}
             <SwitchNavigationContainer></SwitchNavigationContainer>
             <CardActualDay datos={objActualDay}></CardActualDay>
             <DaySelector datos = {objActualDay}></DaySelector>
             <ContainerCardsExtraInfo datos = {objActualDay}></ContainerCardsExtraInfo>
             <MapImage></MapImage>
-            </div>
-
+            {/* </div> */}
         </div>   
     )
 }
