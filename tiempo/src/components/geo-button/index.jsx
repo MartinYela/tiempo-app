@@ -12,7 +12,7 @@ import { InputContext } from '../../context/context-input';
 
 export default function GeoButton() {
 
-  const [text,setText] = useContext(InputContext);
+  const [,setText] = useContext(InputContext);
   
  
   const geo = (e) => {

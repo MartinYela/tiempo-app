@@ -1,6 +1,6 @@
 .fondo {
     position: fixed;
-    width: 100%;
+    width: 320px;
     margin-top: 0;
     z-index: -1;
 }

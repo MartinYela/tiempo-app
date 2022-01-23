@@ -36,7 +36,7 @@ export default function Page() {
         fondo = fondos[2];
     }
     const page_container = {
-            width: '100%',
+            width: '320px',
             height: '100%',
             // backgroundImage: `url(${fondo})`,
             backgroundSize: 'cover', 
